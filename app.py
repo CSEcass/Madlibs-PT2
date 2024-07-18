@@ -55,13 +55,22 @@ def fill_in_the_blank():
 
 
 # Completed.html(Cass)
-@app.route('/Completed')
+@app.route('/Completed', methods=['GET', 'POST'])
 def Fill_In_Blanks():
-    # get: var = request.form.get('name')
-    
-    # fill 
-
-    return render_template('Completed.html')
+       if request.method == 'POST':
+        date = request.form['date']
+        noun = request.form['noun']
+        verb = request.form['verb']
+        verb2 = request.form['verb2']
+        adverb = request.form['adverb']
+        adjective = request.form['adjective']
+        adverb2 = request.form['adverb2']
+        adjective2 = request.form['adjective2']
+        feeling = request.form['feeling']
+        noun2 =request.form['noun2']
+        symptom = request.form['symptom']
+        return render_template('Completed.html', date=date, noun=noun, verb=verb, verb2=verb2, adverb=adverb, adjective=adjective,
+                           adverb2=adverb2, adjective2=adjective2, feeling=feeling,  noun2=noun2, symptom=symptom, )
 
 # End
 
