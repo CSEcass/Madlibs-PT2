@@ -55,8 +55,7 @@ app = Flask(__name__)
 # Completed.html(Cass)
 @app.route('/Completed')
 def Fill_In_Blanks():
-
-    # get
+    # get: var = request.form.get('name')
     
     # fill 
 
