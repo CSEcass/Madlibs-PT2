@@ -60,7 +60,7 @@ def Fill_In_Blanks():
     
     # fill 
 
-    return
+    return render_template('Completed.html')
 
 # End
 
