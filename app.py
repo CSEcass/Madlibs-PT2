@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 
 # Madlib.html
-@app.route(/madlib)
+@app.route('/madlib')
 def fill_in_the_blank():
     myUrl= url_for('Completed')
     return render_template('madlib.html', url = myUrl)
