@@ -1,0 +1,34 @@
+body {
+    background-image: linear-gradient(#8D775F,#f1e5cc);
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.Nav {
+    border-radius: 10px;
+    border-width: 10px;
+    border-style: double;
+    border-color: #8D775F;
+    background-color: #D5BF86;
+    text-align: center;
+    padding: 5px;
+}
+.NavLink {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 6px;
+    border-style:double;
+    border-color: #8D775F;
+    padding: 10px;
+}
+.NavLink:hover {
+    color: red;
+    transition-duration: 0.5s;
+    border-color: darkred;
+}
+li {
+    list-style-type:none;
+    display: inline;
+}
