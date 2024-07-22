@@ -70,7 +70,7 @@ def Fill_In_Blanks():
         noun2 =request.form['noun2']
         symptom = request.form['symptom']
         return render_template('Completed.html', date=date, noun=noun, verb=verb, verb2=verb2, adverb=adverb, adjective=adjective,
-                           adverb2=adverb2, adjective2=adjective2, feeling=feeling,  noun2=noun2, symptom=symptom, )
+                           adverb2=adverb2, adjective2=adjective2, feeling=feeling,  noun2=noun2, symptom=symptom)
 
 # End
 
